@@ -1,0 +1,50 @@
+@import '@carbon/layout/scss/layout.scss';
+
+.service-container {
+  margin-top: $layout-06;
+
+  svg {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .header {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .card {
+    margin-top: $spacing-06;
+
+    .card-header {
+      margin-top: $spacing-05;
+      font-size: 22px;
+      line-height: 22px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    .desc {
+      margin-top: $spacing-03;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .service-container {
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    .card {
+      .card-header {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+}

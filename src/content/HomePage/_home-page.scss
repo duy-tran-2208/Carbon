@@ -1,0 +1,83 @@
+@import '@carbon/layout/scss/layout.scss';
+@import '@carbon/type/scss/type';
+
+.banner-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/bg0.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: $spacing-07;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: black;
+    opacity: 0.3;
+  }
+
+  .curve {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .main-header {
+    // width: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 55px;
+  }
+
+  .btn-container {
+    // display: block;
+    margin-top: $layout-02;
+
+    .bx--btn.bx--btn--primary {
+      font-size: 16px;
+      margin-right: $spacing-03;
+    }
+
+    .start-btn {
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+      transition: 0.2s ease-in;
+      border: 1px solid black;
+
+      &:hover {
+        background-color: rgb(192, 192, 192);
+      }
+    }
+
+    .bx--btn--secondary {
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      transition: 0.2s ease-in;
+      border: 1px solid white;
+
+      &:hover {
+        background-color: rgb(32, 32, 32);
+      }
+    }
+  }
+}
+
+@media (max-width: 369px) {
+  .service-btn {
+    margin-top: 10px !important;
+  }
+}

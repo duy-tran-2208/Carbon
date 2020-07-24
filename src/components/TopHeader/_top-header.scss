@@ -1,0 +1,19 @@
+nav.bx--header__nav {
+  float: right;
+  margin-left: auto;
+}
+a.header-name {
+  font-size: 20px;
+}
+
+a.bx--header__menu-item {
+  font-size: 15px;
+}
+
+nav.bx--header__nav::before {
+  display: none;
+}
+
+ul.bx--header__menu-bar:nth-child(1) {
+  color: black;
+}

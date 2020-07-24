@@ -1,0 +1,48 @@
+@import '@carbon/layout/scss/layout.scss';
+
+.about-container {
+  width: 100%;
+  margin-top: $layout-06;
+  //   background-color: khaki;
+
+  .header {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .desc {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: $spacing-01;
+  }
+
+  .img-container {
+    max-width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: $spacing-06;
+    background-image: url('../../images/group.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    .img-container {
+      max-width: 90%;
+    }
+
+    .desc {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .desc {
+    font-size: 0.8rem;
+  }
+}

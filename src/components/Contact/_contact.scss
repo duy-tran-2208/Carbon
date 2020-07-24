@@ -1,0 +1,167 @@
+@import '@carbon/layout/scss/layout.scss';
+
+.contact-container {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  margin-top: $layout-06;
+  color: white;
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    background-color: khaki;
+    background-image: url('../../images/building.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    .bx--row {
+      align-items: center;
+    }
+
+    .left {
+      .header {
+        font-weight: 700;
+        font-size: 3.5rem;
+      }
+
+      .info {
+        margin-top: $spacing-04 * 2;
+
+        p {
+          margin-bottom: $spacing-01;
+          font-size: 1.2rem;
+          font-weight: lighter;
+        }
+
+        .question {
+          margin-top: $spacing-03 * 2;
+        }
+      }
+
+      .icon {
+        width: 100%;
+        margin-top: $spacing-04;
+
+        svg {
+          width: 40px;
+          height: 40px;
+          margin-right: $spacing-03;
+          transition: 0.2s ease-in;
+
+          &:hover {
+            cursor: pointer;
+            color: rgb(175, 175, 175);
+          }
+        }
+      }
+    }
+
+    .right {
+    }
+
+    .form {
+      height: 50%;
+    }
+  }
+}
+
+label.bx--label {
+  color: white;
+}
+
+.bx--form-item.bx--text-input-wrapper {
+  width: 48%;
+}
+
+#text-area {
+  margin-bottom: 0;
+  // display: none;
+}
+
+#input {
+  margin-bottom: $spacing-04;
+}
+
+#submit-btn {
+  // background-color: rgb(197, 197, 197);
+  // color: black;
+  // color: white;
+  // background-color: rgb(61, 61, 61);
+}
+
+#message {
+  width: 100%;
+}
+
+.bx--text-area__wrapper {
+  width: 90%;
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    .content {
+      .left {
+        .header {
+          font-size: 2.5rem;
+        }
+
+        .info p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    .content {
+      .left {
+        .icon {
+          svg {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .contact-container {
+    .bx--form-item.bx--text-input-wrapper {
+      width: 70%;
+    }
+
+    .bx--select-input {
+      width: 11rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    .bx--form-item.bx--text-input-wrapper {
+      width: 90%;
+    }
+
+    .bx--select-input {
+      width: 90%;
+    }
+  }
+}

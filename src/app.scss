@@ -1,0 +1,21 @@
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+
+@import './components/TutorialHeader/tutorial-header.scss';
+@import './content/LandingPage/_landing-page.scss';
+@import './content/RepoPage/_repo-page.scss';
+@import './components/Info/info';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main.bx--content {
+  padding: 0;
+  overflow-x: hidden;
+  // scroll-behavior: smooth;
+}
